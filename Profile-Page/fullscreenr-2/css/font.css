@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: "icon";
+    src:url(fonts/icon.woff) format("woff") , url(fonts/icon.ttf) format("truetype");
+	 font-weight: normal;
+    font-style: normal;
+}
+
+	
+@font-face {
+
+font-family: 'SegoeUILight';
+src: url('segeo-ui-light-webfont.eot');
+}
+
+@font-face {
+    /* This declaration targets everything else */
+    font-family: 'SegoeUILight';
+    src: url(//:) format('no404'), url(fonts/segeo-ui-light-webfont.woff) format('woff'), url(fonts/segeo-ui-light-webfont.ttf) format('truetype'), url(fonts/segeo-ui-light-webfont.svgz#SegoeUILight) format('svg'), url(fonts/segeo-ui-light-webfont.svg#SegoeUILight) format('svg');
+    font-weight: normal;
+    font-style: normal;
+	
+}
+
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url(fonts/fontawesome-webfont.eot);
+  src: url(fonts/fontawesome-webfont.eot) format('embedded-opentype'),
+    url(fonts/fontawesome-webfont.woff) format('woff'),
+    url(fonts/fontawesome-webfont.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
