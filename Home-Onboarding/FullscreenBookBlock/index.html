@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Fullscreen Pageflip Layout with BookBlock</title>
+		<meta name="description" content="Fullscreen Pageflip Layout with BookBlock" />
+		<meta name="keywords" content="fullscreen pageflip, booklet, layout, bookblock, jquery plugin, flipboard layout, sidebar menu" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
+		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.ui.slider.css" />
+       
+		<script src="js/modernizr.custom.79639.js"></script>
+        <script src="js/raphael.js"></script>
+	</head>
+	<body>
+		<div id="container" class="container">	
+
+			<div class="menu-panel">
+			
+				
+                
+                <ul class="menu-set">
+                    <li class="current"><a id="home">Home</a></li>
+					<li><a id="login-form">Login</a></li>
+                    <li><a id="register">Register</a></li>
+				
+				</ul>
+				<div>
+					<a href="http://tympanus.net/Development/AudioPlayer/">&larr; Techturized</a>
+				</div>
+			</div>
+
+			<div class="bb-custom-wrapper">
+				<div id="bb-bookblock" class="bb-bookblock">
+                 <div id="magazine-wrapper">
+                 <h1>MADAMEYOU</h1>
+                <div class="headline-one">
+                 <div class="headline">
+                  <h2>Your Hair.</h2>
+                  <span>Find Styles<br>For Your Hair Type</span>
+                 </div>
+                 <div class="headline">
+                  <h2>Your Beauty.</h2>
+                  <span>Shop For The <br> Best Products</span>
+                 </div>
+                 <div class="headline">
+                  <h2>Your Life.</h2>
+                  <span>Share Your Hair <br>Journey Over Time</span>
+                 </div>
+                 
+                 <div class="headline-large">
+                  <h2>Personalized Hair Care</h2>
+                  <span>your go to source</span>
+                 </div>
+                 </div>
+                 
+                   <div class="headline-two">
+                 <div class="right">
+                 <div class="marker"></div>
+                  <h2>Many Images Of Us</h2>
+                  <span>check out <br> our latest campaign</span>
+                 </div>
+                 </div>
+                 
+                 </div>
+                <div id="login-form">
+                 <div id="form-block">
+                  <div id="login-options"></div>
+                  <div id="logo-small"></div>
+                  <form action="" method="post">
+                   <span>username</span><br/>
+                   <input type="text" name="Username"/><br/>
+                   <span>Password</span><br/>
+                   <input type="password" name="Password"/>
+                  </form>
+                  </div>
+                </div>
+                
+                
+					<div class="bb-item" id="item1">
+						<div class="content">
+							<div class="scroller">
+								<h2>Whats Your Hair Length?</h2>
+                                
+								<div id="onboarding1" class="radio-set">
+                                 <ul>
+                                 <form id="registration" action="" method="post">
+                                  <li><img src="img/twa.png"/><br/>
+                                  <span>Twa</span><br/>
+                                  <input type="radio" name="Twa" class="onboard"/>
+                                  </li>
+                                  
+                                  <li><img src="img/earlength.png"/><br/>
+                                  <span>Ear Length</span><br/>
+                                  <input type="radio" name="Twa" class="onboard"/>
+                                  </li>
+                                  
+                                  <li><img src="img/shoulderlength.png"/><br/>
+                                  <span>Shoulder Length</span><br/>
+                                  <input type="radio" name="Twa" class="onboard"/>
+                                  </li>
+                                  
+                                  <li><img src="img/bralength.png"/><br/>
+                                  <span>Bra Length</span><br/>
+                                  <input type="radio" name="Twa" class="onboard"/>
+                                  </li>
+                                  
+                                  <li><img src="img/long.png"/><br/>
+                                  <span>Girl, It's Long</span><br/>
+                                  <input type="radio" name="Twa" class="onboard"/>
+                                  </li>
+                                  </form>
+                                 </ul>
+                                </div>
+							</div>
+						</div>
+					</div>
+                    <style type="text/css">
+					 .radio-set ul{
+						 list-style:none;
+						 position:relative;
+						 left: 50px;
+                         top: 35px;
+						 }
+					
+                      .radio-set ul li{
+						  float:left;
+						  margin: 0 5%;
+						  }
+						  
+					   .radio-set input{
+						   left: 35px;
+                           position: relative;}
+						   
+						   .ui-slider-horizontal .ui-slider-range-max{
+							  background-color: rgb(190, 190, 190); }
+							  
+.ui-slider-horizontal {
+ height: 1.8em;
+ background: #5f0318;
+ }
+							  
+.ui-slider-horizontal .ui-slider-handle {
+top: -0.2em;
+margin-left: -.6em;
+border-radius: 100%;
+background: rgb(12, 12, 12);
+}
+
+em#seven{
+	float:right}
+	
+em#seven, em#zero{
+	font-size: 2.2em;
+font-style: normal;
+font-weight: 100;
+	}
+	
+	#alert, #finish{
+		font-size: 2.2em;
+line-height: 1;
+font-weight: 300;
+text-align: justify;
+font-family: 'Lato', Calibri, Arial, sans-serif;
+		}
+		
+		ul#priorites li.priorites{
+			height:100px;
+			width:200px;
+			background-color:#5f0318;
+			float:left;
+			list-style:none;
+			margin: 7px;}
+			
+ul#priorites li.priorites input{
+height: 100px !important;
+width: 200px;
+background: none;
+padding: 0;
+border: 0;
+cursor:pointer;
+}
+
+ul#priorites li.priorites span{
+	text-align: center;
+	font-size: 1.2em;
+line-height: 1.6;
+font-weight: 300;
+font-family: 'Lato', Calibri, Arial, sans-serif;
+position: relative;
+top: -100px;
+color: white;
+left: 10px;
+cursor:pointer;
+	}
+	
+	ul#priorites li.priorites:hover{
+background-color:#1c6955;
+color:white;
+-webkit-transition: all 0.4s ease 0s;
+-moz-transition: all 0.4s ease 0s;
+-o-transition: all 0.4s ease 0s;
+transition: all 0.4s ease 0s;
+}
+
+#google{
+	margin: 12% auto;
+width: 253px;}
+
+						   
+                    </style>
+                    
+                     
+					<div class="bb-item" id="item2">
+						<div class="content">
+							<div class="scroller">
+								<h2>What Does Your Hair Look Like When Its Wet?</h2>
+								<div id="onboarding2" class="radio-set">
+                                  <ul>
+                                 <form id="registration" action="" method="post">
+                                  <li><img src="img/wethair1.png"/><br/>
+                                  <span></span><br/>
+                                  <input type="radio" name="Twa" class="onboard"/>
+                                  </li>
+                                  
+                                  <li><img src="img/wethair2.png"/><br/>
+                                  <span></span><br/>
+                                  <input type="radio" name="Twa" class="onboard"/>
+                                  </li>
+                                  
+                                  <li><img src="img/wethair3.png"/><br/>
+                                  <span></span><br/>
+                                  <input type="radio" name="Twa" class="onboard"/>
+                                  </li>
+                                  
+                                  <li><img src="img/wethair4.png"/><br/>
+                                  <span></span><br/>
+                                  <input type="radio" name="Twa" class="onboard"/>
+                                  </li>
+                                  
+                                  <li><img src="img/wethair5.png"/><br/>
+                                  <span></span><br/>
+                                  <input type="radio" name="Twa" class="onboard"/>
+                                  </li>
+                                  </form>
+                                 </ul>
+                                 </div>
+                             </div>
+						</div>
+					</div>
+					<div class="bb-item" id="item3">
+						<div class="content">
+							<div class="scroller">
+								<h2>Do You Have Color In Your Hair</h2>
+								 <div id="onboarding3" class="radio-set">
+                                  <ul>
+                                 <form id="registration" action="" method="post">
+                                  <li><img src="img/color.png"/><br/>
+                                  <span>Yes, I Love Color</span><br/>
+                                  <input type="radio" name="Twa" class="onboard"/>
+                                  </li>
+                                  
+                                  <li><img src="img/halfcolor.png"/><br/>
+                                  <span>I Have A Patch In The Front</span><br/>
+                                  <input type="radio" name="Twa" class="onboard"/>
+                                  </li>
+                                  
+                                  <li><img src="img/nocolor.png"/><br/>
+                                  <span>Naw, It's Not For Me</span><br/>
+                                  <input type="radio" name="Twa" class="onboard"/>
+                                  </li>
+                                  
+                                 
+                                  </form>
+                                 </ul>
+                                 </div>
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item4">
+						<div class="content">
+							<div class="scroller">
+								<h2>Does Your Hair Need Love?</h2>
+								  <div id="onboarding4" class="radio-set">
+                                  <ul>
+                                 <form id="registration" action="" method="post">
+                                  <li><img src="img/dryhair.png"/><br/>
+                                  <span>Yes, Always Needs Moisture </span><br/>
+                                  <input type="radio" name="Twa" class="onboard"/>
+                                  </li>
+                                  
+                                  <li><img src="img/splithair.png"/><br/>
+                                  <span>Yes, My Ends Are Splitting</span><br/>
+                                  <input type="radio" name="Twa" class="onboard"/>
+                                  </li>
+                                  
+                                  <li><img src="img/healthyhair.png"/><br/>
+                                  <span>It’s Loved And Healthy</span><br/>
+                                  <input type="radio" name="Twa" class="onboard"/>
+                                  </li>
+                                  
+                                  
+                                  </form>
+                                 </ul>
+                                 </div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item5">
+						<div class="content">
+							<div class="scroller">
+								<h2>How Much Do You Workout</h2>
+                                
+<div id="slider-range-max"></div>
+
+<em id="zero">0></em>
+<em id="seven"><7</em>
+								<p>
+  <label for="amount">I Work Out</label>
+  <input type="text" id="amount" style="border: 0; color: #f6931f; font-weight: bold;" />
+   <label for="amount">Times A Week</label>
+</p>
+							</div>
+						</div>
+					</div>
+                    
+                    <div class="bb-item" id="item6">
+						<div class="content">
+							<div class="scroller">
+								<h2>What Are Your Top Priorities For Your Hair?</h2>
+                                
+<ul id="priorites">
+<li class="priorites"><input type="button" id="goNatural" /><span>Go Natural But Don't Know Where To Start</span></li>
+<li class="priorites"><input type="button" id="proffesion"/><span>Find Styles For My Proffesion</span></li>
+<li class="priorites"><input type="button" id="budget"/><span>Find Products That Fit My Budget</span></li>
+<li class="priorites"><input type="button" id="funky"/><span>Keeping It Funky And Fresh</span></li>
+<li class="priorites"><input type="button" id="healthy"/><span>Get It Healthy again</span></li>
+</ul>
+							</div>
+						</div>
+					</div>
+                    
+                    <div class="bb-item" id="item7">
+						<div class="content">
+							<div class="scroller">
+								<h2>Where Are You From?</h2>
+                                
+<div id="alert">I Represent </div>
+  
+  <div id="map" style="width: 730px; height: 430px; margin:0 auto"></div>
+							</div>
+						</div>
+					</div>
+                    
+                     <div class="bb-item" id="item7">
+						<div class="content">
+							<div class="scroller">
+								<h2>Thank You For Joining!</h2>
+                                
+<div id="finish"> <center>Enter <a href="../fullscreenr-2/index.html">Madame You</a></center> </div>
+
+            <div id="google"></div>
+  
+
+							</div>
+						</div>
+					</div>
+                    
+            
+				</div>
+				
+				<nav>
+					<span id="bb-nav-prev">&larr;</span>
+					<span id="bb-nav-next">&rarr;</span>
+				</nav>
+
+				<span id="tblcontents" class="menu-button">Table of Contents</span>
+
+			</div>
+				
+		</div><!-- /container -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="js/jquery-ui-1.10.1.custom.min.js"></script>
+		<script src="js/jquery.mousewheel.js"></script>
+		<script src="js/jquery.jscrollpane.min.js"></script>
+		<script src="js/jquerypp.custom.js"></script>
+		<script src="js/jquery.bookblock.js"></script>
+		<script src="js/page.js"></script>
+        <script src="js/color.jquery.js"></script>
+    	<script src="js/us-map.js"></script>
+        
+        <script>
+	$(document).ready(function() {
+	  $('#map').usmap({
+	    'stateSpecificStyles': {
+	      'AK' : {fill: '#5f0318'}
+	    },
+	    'stateSpecificHoverStyles': {
+	      'HI' : {fill: '#5f0318'}
+	    },
+	    
+	    'mouseoverState': {
+	      'HI' : function(event, data) {
+	        //return false;
+	      }
+	    },
+	    
+	    
+	    'click' : function(event, data) {
+	      $('#alert')
+	        .text('I Represent '+data.name)
+	        .stop()
+	        
+	    }
+	  });
+	  
+	});
+	</script>
+		<script>
+			$(function() {
+
+				Page.init();
+
+			});
+			
+  $(function() {
+    $( "#slider-range-max" ).slider({
+      range: "max",
+      min: 0,
+      max: 7,
+      value: 1,
+      slide: function( event, ui ) {
+        $( "#amount" ).val( ui.value );
+      }
+    });
+    $( "#amount" ).val( $( "#slider-range-max" ).slider( "value" ) );
+  });
+ 
+		</script>
+	</body>
+</html>
